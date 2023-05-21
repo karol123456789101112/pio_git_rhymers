@@ -27,13 +27,13 @@ public class IntLinkedList {
     public int top() {
         if (isEmpty())
             return DEFAULT_RETURN_VALUE;
-        return last.getValue();
+        return last.getVALUE();
     }
 
     public int pop() {
         if (isEmpty())
             return DEFAULT_RETURN_VALUE;
-        int ret = last.getValue();
+        int ret = last.getVALUE();
         last = last.getPrev();
         return ret;
     }
